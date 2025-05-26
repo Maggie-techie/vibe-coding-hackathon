@@ -90,18 +90,16 @@ A comprehensive patient follow-up reminder system that helps clinics track patie
 
 ## Deployment
 
-1. Build the application:
-   ```bash
-   npm run build
-   ```
+i tried to deploy this project on netlify and vercel it was not showing 
 
-2. Deploy to your preferred hosting platform:
-   - Netlify
-   - Vercel
-   - AWS
-   - etc.
+![image](https://github.com/user-attachments/assets/35d72305-cd24-4160-aab4-d685f9cac47e)
 
-3. Set up environment variables on your hosting platform
+![image](https://github.com/user-attachments/assets/f466c9c4-4135-4871-8485-125a3c56682d)
+
+
+![image](https://github.com/user-attachments/assets/c016d040-8104-4847-9f82-c4d19727bed8)
+there are some of the images 
+this is the most challenge i encounterd .
 
 ## Security
 

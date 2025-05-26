@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-sans text-neutral-800 bg-neutral-50;
+  }
+
+  h1 {
+    @apply text-2xl font-bold leading-tight;
+  }
+
+  h2 {
+    @apply text-xl font-semibold leading-tight;
+  }
+
+  h3 {
+    @apply text-lg font-medium leading-snug;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-button font-medium transition-all duration-default;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700;
+  }
+
+  .btn-outline {
+    @apply border border-primary-500 text-primary-500 bg-transparent hover:bg-primary-50;
+  }
+
+  .card {
+    @apply bg-white rounded-card shadow-card p-6;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+
+  .form-label {
+    @apply block mb-2 text-sm font-medium text-neutral-700;
+  }
+
+  .form-error {
+    @apply mt-1 text-sm text-error;
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-neutral-600 hover:bg-primary-50 hover:text-primary-600 transition-all duration-default;
+  }
+
+  .sidebar-link.active {
+    @apply bg-primary-50 text-primary-600 font-medium;
+  }
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 300ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  animation: scaleIn 300ms ease-in-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
